@@ -1,0 +1,18 @@
+<!--page/count/counttool.wxml-->
+<view class="wrap-bj">
+  <view class="investment">
+    <view class="investment-amount">
+      <text class="amount-name">投资金额(元)</text><input placeholder-style="color:#fff"  type="digit" value="{{amount}}" bindblur="amountInputEvent" class="amount-input"/>
+    </view>
+    <view class="annualized-returns">
+      <text class="returns-name">年化收益(%)</text><input placeholder-style="color:#fff" type="digit" value="{{returns}}" bindblur="returnsInputEvent" class="returns-input"/>
+    </view>
+    <view class="investment-cycle">
+      <text class="cycle-name">投资周期(日)</text><input placeholder-style="color:#fff" type="digit" value="{{cycle}}" bindblur="cycleInputEvent" class="cycle-input"/>
+    </view>
+    <view class="investment-income">
+      <text class="income-name">投资收益(元)</text><text class="income-input">{{income}}</text>
+    </view>  
+    <button class="count-btn" bindtap="onCalculateEarnings">计算收益</button>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+<button style="margin:30rpx;" bindtap="chooseimage">获取图片</button> 
+<view class="imgpic">
+  <image src="{{tempFilePaths }}" class="pic" mode="aspectFill" style="width: 100%;"/> 
+</view>
+<view class="imgpic">
+  <image src="{{tempFilePaths }}" class="pic" mode="center" style="width: 100%;"/> 
+</view>

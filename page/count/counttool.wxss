@@ -1,0 +1,50 @@
+/* page/count/counttool.wxss */
+.wrap-bj{
+  width: 100%;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495079396859&di=5ca54259bb6382c3d87c6603d09659e1&imgtype=0&src=http%3A%2F%2Fimg.sc115.com%2Fuploads%2Fsc%2Fjpgs%2F05%2Fxpic8103_sc115.com.jpg') no-repeat;
+  background-size: 100% 100%;
+  background-attachment:fixed;
+}
+.wrap-bj:before{
+    content: "";
+    display: block;
+    padding-top: 150%; 
+}
+img{
+    width: 100%;
+}
+.investment{
+  width: 100%;
+  position: absolute;
+  top: 35%;
+}
+.investment-amount,.annualized-returns,.investment-cycle,.investment-income{
+  width: 92%;
+  height:80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #fff;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.amount-name,.returns-name,.cycle-name,.income-name{
+  color: #fff;
+  font-size: 35rpx;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.amount-input,.returns-input,.cycle-input,.income-input{
+  height:80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  text-align: right;
+  float: right;
+}
+.count-btn{
+  color: #fff;
+  border:1px solid #fff;
+  width:90%;
+  margin-top: 50rpx;
+  background-color: transparent;
+}
+     

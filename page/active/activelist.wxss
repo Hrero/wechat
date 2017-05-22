@@ -1,0 +1,13 @@
+.wrap-active{
+  padding-top: 30rpx;
+}
+.item1{
+  width: 90%;
+  height:250rpx;
+  margin:0 auto; 
+  border: 1px solid pink;
+  text-align: center;
+  line-height: 250rpx;
+  color: red;
+  margin-bottom: 20rpx;
+}

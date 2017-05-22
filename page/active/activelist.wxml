@@ -1,0 +1,5 @@
+<view class="wrap-active">
+  <view class="item1" wx:for="{{activeInfo}}"  wx:for-index="idx" wx:for-item="item" data-index="{{item.index}}" data-indexx="{{idx}}" bindtap="bindActViewTap">
+  {{((item.index+idx)/2)+1}} : {{item.title}}
+  </view>
+</view>

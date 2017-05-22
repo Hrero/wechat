@@ -1,0 +1,62 @@
+<!--page/aboutus/aboutus.wxml-->
+<view  class="TopBar swiper-tab" >
+  <view  class="Bar-class swiper-tab-list {{currentTab==0 ? 'active' : ''}} " data-current="0" bindtap="swichNav">
+    <view class="Bar-icon" ><icon color="red" type="success" /></view>
+    公司简介
+  </view>
+  <view class="Bar-class swiper-tab-list {{currentTab==1 ? 'active' : ''}}" data-current="1" bindtap="swichNav">
+    <view class="Bar-icon" ><icon color="red" type="waiting" /></view>
+    安全保障
+  </view>
+  <view class="Bar-class swiper-tab-list {{currentTab==2 ? 'active' : ''}}" data-current="2" bindtap="swichNav">
+    <view class="Bar-icon" ><icon color="red" type="info" /></view>
+    管理团队
+  </view>
+</view>
+<swiper duration="500" current="{{currentTab}}" bindchange="bindChange" class="swiper-box" style="height:{{winHeight - 31}}px">
+  <swiper-item >
+    <template is="msgItem-company"/>
+  </swiper-item>
+    <swiper-item >
+    <template is="msgItem-assurance"/>
+  </swiper-item>
+    <swiper-item >
+    <template is="msgItem-management"/>
+  </swiper-item>
+</swiper>
+
+<!--<view  class="TopBar" >
+  <view  class="Bar-class {{currentTab==0 ? 'active' : ''}} " data-current="0" bindtap="onChangeTopbarIndex">
+    <view class="Bar-icon" ><icon color="red" type="success" /></view>
+    <text class="Bar-text">公司简介</text>
+  </view>
+  <view class="Bar-class {{currentTab==1 ? 'active' : ''}}" data-current="1" bindtap="onChangeTopbarIndex">
+    <view class="Bar-icon" ><icon color="red" type="waiting" /></view>
+    <text class="Bar-text">安全保障</text>
+  </view>
+  <view class="Bar-class {{currentTab==2 ? 'active' : ''}}" data-current="2" bindtap="onChangeTopbarIndex">
+    <view class="Bar-icon" ><icon color="red" type="info" /></view>
+    <text class="Bar-text">管理团队</text>
+  </view>
+</view>
+<template is="{{msgItemName}}"/>-->
+
+<template name="msgItem-company">
+  <view class="msgItem company-profile">
+    <view class="company-txt">
+      <text>互存金融简介</text>
+    </view>
+  </view> 
+</template>
+
+<template name="msgItem-assurance">
+  <view class="msgItem security-assurance">
+    安全保障
+  </view> 
+</template>
+
+<template name="msgItem-management">
+  <view class="msgItem team-management">
+    管理团队
+  </view> 
+</template>

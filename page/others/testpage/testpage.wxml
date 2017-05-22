@@ -1,0 +1,3 @@
+<view class="wrap-test">
+  <text class="test-txt">{{title}}</text>
+</view>

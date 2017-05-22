@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "page/aboutus/aboutus",
+    "page/person/personalpage",
+    "page/active/activelist",
+    "page/count/counttool",
+
+
+    "page/others/testpage/testpage"
+
+    
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "互存金融",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "page/count/counttool",
+        "iconPath": "images/tabbar/wechat.png",
+        "selectedIconPath": "images/tabbar/wechatHL.png",
+        "text": "工具"
+      },
+      {
+        "pagePath": "page/aboutus/aboutus",
+        "iconPath": "images/tabbar/wechat.png",
+        "selectedIconPath": "images/tabbar/wechatHL.png",
+        "text": "关于"
+      },
+      {
+        "pagePath": "page/active/activelist",
+        "iconPath": "images/tabbar/wechat.png",
+        "selectedIconPath": "images/tabbar/wechatHL.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "page/person/personalpage",
+        "iconPath": "images/tabbar/wechat.png",
+        "selectedIconPath": "images/tabbar/wechatHL.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

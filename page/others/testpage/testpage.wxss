@@ -1,0 +1,8 @@
+.test-txt{
+  line-height: 500rpx;
+  color: #000;
+  font-size: 40rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
